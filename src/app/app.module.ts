@@ -5,13 +5,27 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import { DataService } from './data.service';
 
+import { PeopleComponent } from './people/people.component';
+import { PlanetComponent } from './planet/planet.component';
+import { SpecieComponent } from './specie/specie.component';
+import {Routes, RouterModule} from '@angular/router';
+const appRoutes: Routes=[
+  {path: 'people',component:PeopleComponent},
+  {path: 'planet', component:PlanetComponent},
+  {path: 'specie', component:SpecieComponent}
+];
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PeopleComponent,
+    PlanetComponent,
+    SpecieComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

@@ -2,6 +2,5 @@ export class People{
 
     name:string;
     height:string;
-    gender:string;
-    next:string;
+    gender:string;    
 }

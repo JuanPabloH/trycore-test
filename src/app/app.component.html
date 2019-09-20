@@ -1,9 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
 
-<div *ngFor="let person of persons$.results" style="text-align:center">
-  <h2>{{person.name}}</h2>  
-  <p>{{person.height}}</p>
-  <p>{{person.gender}}</p>
-</div>
+<a routerLink="/people"> People</a>|
+<a routerLink="/planet"> Planet</a>|
+<a routerLink="/specie"> Specie</a>|<br>
 
+<router-outlet></router-outlet>
