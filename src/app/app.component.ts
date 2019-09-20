@@ -7,12 +7,8 @@ import { DataService } from './data.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
-  persons$: any;
-  constructor(private dataService: DataService){}
+export class AppComponent{
+  constructor(){}
 
-  ngOnInit(){
-    return this.dataService.getPeople()
-    .subscribe(data=> this.persons$=data);
-  }
+  
 }
