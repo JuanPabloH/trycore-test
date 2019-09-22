@@ -1,9 +1,3 @@
-
-<h1>PEOPLE</h1>
-<h3><strong>Page </strong>{{page-1}}</h3>
-<div >
-  <button (click)="chargedPeople()">Load records</button>
-</div>
 <table>
   <tr>
     <th>Name</th>
@@ -11,6 +5,7 @@
     <th>Gender</th>
     <th>birth_year</th>
     <th>Acciones</th>
+  
   </tr>
   <tr *ngFor="let person of persons">
     <td>{{person.name}}</td>
@@ -18,11 +13,7 @@
     <td>{{person.gender}}</td>
     <td>{{person.birth_year}}</td>
     <td>
-      <button (click)="addBDLocal(person)">Add to local BD</button>
+      <button>Delete</button>
     </td>
   </tr>
 </table>
-
-<div *ngIf="nextVaules">
-  <button (click)="nextPage()">Next Page >></button>
-</div>
