@@ -38,7 +38,6 @@ export class PeopleComponent implements OnInit {
       
   }
   addBDLocal(person){
-    const newPerson: People=Object.assign({},person);
     this.peopleService.postPeople(person).subscribe();
     alert("Se agregó con exito a la base de datos local")
   }

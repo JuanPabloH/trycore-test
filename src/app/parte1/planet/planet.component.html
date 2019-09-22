@@ -12,7 +12,8 @@
     <th>diameter |</th>
     <th>climate |</th>
     <th>gravity |</th>
-    <th>terrain </th>
+    <th>terrain |</th>
+    <th>acciones </th>
   </tr>
   <tr *ngFor="let planet of planets">
     <td>{{planet.name}} |</td>
@@ -22,6 +23,9 @@
     <td>{{planet.climate}} |</td>
     <td>{{planet.gravity}} |</td>
     <td>{{planet.terrain}} </td>
+    <td>
+      <button (click)="addBDLocal(planet)">Add to local BD</button>
+    </td>
 
     
   </tr>
