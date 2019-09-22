@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
-import { DataService } from './data.service';
+import { DataService } from './parte1/services/data.service';
 
-import { PeopleComponent } from './people/people.component';
-import { PlanetComponent } from './planet/planet.component';
-import { SpecieComponent } from './specie/specie.component';
+import { PeopleComponent } from './parte1/people/people.component';
+import { PlanetComponent } from './parte1/planet/planet.component';
+import { SpecieComponent } from './parte1/specie/specie.component';
 import {Routes, RouterModule} from '@angular/router';
 const appRoutes: Routes=[
   {path: 'people',component:PeopleComponent},

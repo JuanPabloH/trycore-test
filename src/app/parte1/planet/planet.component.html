@@ -1,0 +1,32 @@
+
+<h1>PLANETS</h1>
+<h3><strong>Page </strong>{{page-1}}</h3>
+<div >
+  <button (click)="chargedPlanets()">Load records</button>
+</div>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>rotation_period |</th>
+    <th>orbital_period |</th>
+    <th>diameter |</th>
+    <th>climate |</th>
+    <th>gravity |</th>
+    <th>terrain </th>
+  </tr>
+  <tr *ngFor="let planet of planets">
+    <td>{{planet.name}} |</td>
+    <td>{{planet.rotation_period}} |</td>
+    <td>{{planet.orbital_period}} |</td>
+    <td>{{planet.diameter}} |</td>
+    <td>{{planet.climate}} |</td>
+    <td>{{planet.gravity}} |</td>
+    <td>{{planet.terrain}} </td>
+
+    
+  </tr>
+</table>
+
+<div *ngIf="nextVaules">
+  <button (click)="nextPage()">Next Page >></button>
+</div>
